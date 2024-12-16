@@ -1,0 +1,3 @@
+# Silent Async Function Errors in Dart
+
+This example demonstrates a common issue in Dart where exceptions within asynchronous functions are not properly handled, leading to silent failures. The key to resolving this is understanding and using the `rethrow` keyword.  The code showcases both the flawed approach and the corrected solution.  If the `rethrow` is removed from `fetchData` function, the error will not be reported to the main function and will effectively be lost.
